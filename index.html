@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 9: Tooltip UI - Solo CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-magic"></i> Proyecto 9: Tooltip UI</h1>
+            <p class="subtitle">Crea tooltips para elementos de navegación usando solo HTML y CSS. Pasa el cursor sobre los enlaces para ver los diferentes efectos.</p>
+        </header>
+        
+        <section class="nav-container">
+            <h2 class="nav-title"><i class="fas fa-bars"></i> Menú de Navegación con Tooltips</h2>
+            <nav>
+                <ul class="navigation">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-tooltip="Página principal de inicio">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                        <div class="tooltip fade-in">Página principal de inicio</div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-tooltip="Explora nuestros proyectos destacados">
+                            <i class="fas fa-project-diagram"></i> Projects
+                        </a>
+                        <div class="tooltip slide-in">Explora nuestros proyectos destacados</div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-tooltip="Lee nuestros artículos más recientes">
+                            <i class="fas fa-blog"></i> Blog
+                        </a>
+                        <div class="tooltip scale-in">Lee nuestros artículos más recientes</div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-tooltip="Conoce más sobre nosotros">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                        <div class="tooltip fade-in">Conoce más sobre nosotros</div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-tooltip="Contáctanos para más información">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                        <div class="tooltip slide-in">Contáctanos para más información</div>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section class="effects-container">
+            <h2><i class="fas fa-sliders-h"></i> Tipos de Animación</h2>
+            <div class="effects-info">
+                <div class="effect-item">
+                    <div class="effect-icon fade-in-demo">F</div>
+                    <h3>Fade-in</h3>
+                    <p>Aparece gradualmente con opacidad</p>
+                </div>
+                <div class="effect-item">
+                    <div class="effect-icon slide-in-demo">S</div>
+                    <h3>Slide-in</h3>
+                    <p>Se desliza desde arriba</p>
+                </div>
+                <div class="effect-item">
+                    <div class="effect-icon scale-in-demo">Z</div>
+                    <h3>Scale-in</h3>
+                    <p>Aparece con efecto de zoom</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Proyecto 9: Tooltip UI - Creado con solo HTML y CSS</p>
+            <p class="instructions"><i class="fas fa-mouse-pointer"></i> Pasa el cursor sobre los enlaces de navegación para ver las tooltips</p>
+        </footer>
+    </div>
+
+    <!-- Versión con JavaScript (opcional) -->
+    <script src="script.js" defer></script>
+</body>
+</html>
